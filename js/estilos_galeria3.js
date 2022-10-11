@@ -36,8 +36,9 @@ btnRight.addEventListener('click', function(){
 btnLeft.addEventListener('click', function(){
     Prev();
 });
-
-// Para que se ejecute automáticamente cada 3 segundos
+/*
+// Para que se ejecute automáticamente cada 5 segundos
 setInterval(function(){
     Next();
 }, 5000);
+*/

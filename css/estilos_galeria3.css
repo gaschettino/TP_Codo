@@ -2,19 +2,16 @@
     box-sizing: border-box;
 }
 /* Se debería poder sacar */
-/* body {
-    display:flex;
-    min-height:100vh;
-} */
 
 .conteiner-slider{
     /* width: 90%; */
     /* Hay que cambiar. Pero es lo que me cambia que se vean o no las otras imágenes*/
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
     position: relative;
 }
+
 .slider{
     display:flex;
     width: 700%;     /* PORQUE TENGO 7 IMÁGENES!!! */
@@ -24,6 +21,7 @@
 
 .slider__section{
     width:80%;
+
 }
 
 .slider__img {
@@ -48,6 +46,7 @@
     cursor:pointer;
 }
 
+
 .slider__btn:hover{
     background: white;
 }
@@ -60,3 +59,52 @@
     right: 0.5em;
 }
 
+.titulo{
+    position:relative;
+    top:80%;
+    /* left:40%; */
+    color:grey;
+    font-size:8vh;
+    font-family: 'Dancing Script', cursive, bold;
+    /*Hay que jugar con esto para que se vean bien */
+    text-shadow: -1px 0 white;
+    text-decoration: none;
+}
+
+.contenedor{
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw,1fr));
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    align-items:center;
+    overflow: hidden;
+}
+
+.contenedor img {
+    max-height: 20vh;
+    align-items:center;
+    /* max-width: 22vw; */
+}
+
+.grilla_imagenes p{
+    font-family: 'Dancing Script', cursive, bold;
+    font-size:8vh;
+    margin-top:1em;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (min-width:480px) and (max-width: 768px){
+
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+
+}
+@media screen and (min-width: 1024px){
+
+}
