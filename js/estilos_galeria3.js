@@ -40,4 +40,4 @@ btnLeft.addEventListener('click', function(){
 // Para que se ejecute automáticamente cada 3 segundos
 setInterval(function(){
     Next();
-}, 3000);
+}, 5000);
