@@ -42,3 +42,73 @@ setInterval(function(){
     Next();
 }, 5000);
 */
+const fotoBebe = document.querySelector("#foto_bebe");
+const fotoRN = document.querySelector("#foto_RN");
+const fotoNiños = document.querySelector("#foto_niños");
+const fotoQuince = document.querySelector("#foto_quince");
+const fotoEventos = document.querySelector("#foto_eventos");
+const fotoEmb = document.querySelector("#foto_embarazadas");
+const fotoFam = document.querySelector("#foto_familia");
+
+function mostrarRN() {
+    document.getElementById('RN').style.display = 'block';
+}
+function mostrarBB() {
+    document.getElementById('BB').style.display = 'block';
+}
+function mostrarNiños() {
+    document.getElementById('Niños').style.display = 'block';
+}
+function mostrar15años() {
+    document.getElementById('quinceaños').style.display = 'block';
+}
+function mostrarEventos() {
+    document.getElementById('Eventos').style.display = 'block';
+}
+function mostrarEmbarazadas() {
+    document.getElementById('Embarazadas').style.display = 'block';
+}
+function mostrarFamilia() {
+    document.getElementById('Familia').style.display = 'block';
+}
+function ocultarTodo() {
+    document.getElementById('BB').style.display = "none";
+    document.getElementById('RN').style.display = "none";
+    document.getElementById('Niños').style.display = "none";
+    document.getElementById('quinceaños').style.display = "none";
+    document.getElementById('Eventos').style.display = "none";
+    document.getElementById('Embarazadas').style.display = "none";
+    document.getElementById('Familia').style.display = "none";
+}
+      
+
+
+
+fotoRN.addEventListener('click', function(){
+    ocultarTodo();
+    mostrarRN();
+});
+fotoBebe.addEventListener('click', function(){
+    ocultarTodo();
+    mostrarBB();
+});
+fotoNiños.addEventListener('click', function(){
+    ocultarTodo();
+    mostrarNiños();
+});
+fotoQuince.addEventListener('click', function(){
+    ocultarTodo();
+    mostrar15años();
+});
+fotoEventos.addEventListener('click', function(){
+    ocultarTodo();
+    mostrarEventos();
+});
+fotoEmb.addEventListener('click', function(){
+    ocultarTodo();
+    mostrarEventos();
+});
+fotoFam.addEventListener('click', function(){
+    ocultarTodo();
+    mostrarFamilia();
+});
