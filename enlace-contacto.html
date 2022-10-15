@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</head>
+
 <body>
-    <header><!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
+    <header>
+        <!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
         <!-- Agregué la referencia a al home en la imagen, para que se pueda volver apretando el logo. -->
         <a href="index.html">
             <img src="imagenes/sinfondo-blanco-01.png" alt="Logo" width="30%">
@@ -23,34 +32,107 @@
         Estaba como:
         <h1 style="font-size: 3vw">Capturando emociones</h1> 
         No queda bien, pero es digno, lo que tengo es mucho espacio entre el logo y el texto -->
-        <p>Capturando emociones</p>     
+        <p>Capturando emociones</p>
     </header>
-    <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.2359267557554!2d-64.56035448465134!3d-35.59724648021403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95db45d9697abaed%3A0xb55f3174de8b972b!2sIslas%20Malvinas%20435%2C%20L6387AII%20Caleuf%C3%BA%2C%20La%20Pampa!5e0!3m2!1sen!2sar!4v1664900766585!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <article>
-        <form action="link" method="POST" target="_blank">
-            <label for="firstname">Nombre: </label>
-            <input size="30" type="text" name="firstname" id="firstname">
-            <input type="submit" value="Enviar">
-            <label for="lastname">Apellido: </label>
-            <input size="30" type="text" name="lastname" id="lastname">
-            <input type="submit" value="Enviar">
-            <label for="telefono">Telefono: </label>
-            <input size="30" type="number" name="telefono" id="telefono">
-            <input type="submit" value="Enviar">
-            <label for="mailto">E-mail: </label>
-            <input size="30" type="text" name="mailto" id="mailto">
-            <input type="submit" value="Enviar">
-        </form>
+    <article class="p-3">
+        <div class="container text-center">
+            <div class="row gx-3">
+                <div class="col">
+                    <div class="p-3 border">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.2359267557554!2d-64.56035448465134!3d-35.59724648021403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95db45d9697abaed%3A0xb55f3174de8b972b!2sIslas%20Malvinas%20435%2C%20L6387AII%20Caleuf%C3%BA%2C%20La%20Pampa!5e0!3m2!1sen!2sar!4v1664900766585!5m2!1sen!2sar"
+                            width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- <form action="link" method="POST" target="_blank">
+            <div class="mb-3">
+                <label for="firstname">Nombre: </label>
+                <input size="30" type="text" name="firstname" id="firstname">
+            </div>
+            <div class="mb-3">
+                <label for="lastname">Apellido: </label>
+                <input size="30" type="text" name="lastname" id="lastname">
+            </div>
+            <div class="mb-3">
+                <label for="direccion">Dirección: </label>
+                <input type="text" name="direccion" id="direccion">   
+            </div>
+            <div class="mb-3">
+                <label for="ciudad">Ciudad: </label>
+                <input size="30" type="text" name="ciudad" id="ciudad">
+            </div>
+            <div class="mb-3">
+                <label for="telefono">Teléfono: </label>
+                <input size="30" type="number" name="telefono" id="telefono">
+            </div>
+            <div class="mb-3">
+                <label for="mailto">E-mail: </label>
+                <input size="30" type="text" name="mailto" id="mailto">
+            </div>
+            <div class="mb-3">
+                <label for="asunto">Asunto: </label>
+                <select name="asunto">
+                    <option selected>Seleccionar </option>
+                    <option value="1">Consultas </option>
+                    <option value="2">Presupuesto </option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Enviar">
+            </div>
+        </form> -->
+                <div class="col">
+                    <div class="p-3 border">
+                        <form class="row g-3">
+                            <div class="col-md-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="apellido" class="form-label">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputAddress" class="form-label">Dirección:</label>
+                                <input type="text" class="form-control" id="inputAddress"
+                                    placeholder="Islas Malvinas 435">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputCity" class="form-label">Localidad:</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Caleufú">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Provincia:</label>
+                                <input type="text" class="form-control" id="inputState" placeholder="La Pampa">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputtel" class="form-label">Teléfono:</label>
+                                <input type="text" class="form-control" id="inputtel">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputmail" class="form-label">E-mail:</label>
+                                <input type="text" class="form-control" id="inputmail">
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </article>
     <footer>
-        <br class="container"><!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
+        <br class="container">
+        <!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
         <!-- Lo de los enlaces fue fácil, ya casi estaba, solo que era al revés el orden. Puse para que se abran en otra página. 
         No me queda claro si esto cuenta como ícono o no. Si es así, listorti
         -->
-        <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png" width="4%"></a>
-        <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png" width="4%"></a>
+        <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png"
+                width="4%"></a>
+        <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png"
+                width="4%"></a>
 
         <!-- No entiendo para qué está este Home, queremos que sea un hipervínculo al home? -->
         <div>Home</div>
@@ -58,4 +140,5 @@
         <div>Todos los derechos reservados</div>
     </footer>
 </body>
+
 </html>
