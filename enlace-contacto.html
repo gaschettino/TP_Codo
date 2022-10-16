@@ -34,91 +34,116 @@
         No queda bien, pero es digno, lo que tengo es mucho espacio entre el logo y el texto -->
         <p>Capturando emociones</p>
     </header>
+    <nav>
+        <a class="barra_navegacion" href="enlace_servicios.html">Servicios</a>
+        <a class="barra_navegacion" href="enlace_galeria.html">Galería</a>
+        <a class="barra_navegacion" href="enlace_sobremi.html">Sobre mí</a>
+    </nav>
+    <section>
+        <div>
+            <p>¡Contactame!</p>
+        </div>
+    </section>
     <article class="p-3">
         <div class="container text-center">
             <div class="row gx-3">
                 <div class="col">
-                    <div class="p-3 border">
+                    <div class="p-3">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.2359267557554!2d-64.56035448465134!3d-35.59724648021403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95db45d9697abaed%3A0xb55f3174de8b972b!2sIslas%20Malvinas%20435%2C%20L6387AII%20Caleuf%C3%BA%2C%20La%20Pampa!5e0!3m2!1sen!2sar!4v1664900766585!5m2!1sen!2sar"
-                            width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25955.192970427142!2d-64.57631431643449!3d-35.593220136075075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95db460d4c8be621%3A0x3d112324c9c49ba5!2sCaleuf%C3%BA%2C%20La%20Pampa!5e0!3m2!1ses-419!2sar!4v1665928267053!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
-                <!-- <form action="link" method="POST" target="_blank">
-            <div class="mb-3">
-                <label for="firstname">Nombre: </label>
-                <input size="30" type="text" name="firstname" id="firstname">
-            </div>
-            <div class="mb-3">
-                <label for="lastname">Apellido: </label>
-                <input size="30" type="text" name="lastname" id="lastname">
-            </div>
-            <div class="mb-3">
-                <label for="direccion">Dirección: </label>
-                <input type="text" name="direccion" id="direccion">   
-            </div>
-            <div class="mb-3">
-                <label for="ciudad">Ciudad: </label>
-                <input size="30" type="text" name="ciudad" id="ciudad">
-            </div>
-            <div class="mb-3">
-                <label for="telefono">Teléfono: </label>
-                <input size="30" type="number" name="telefono" id="telefono">
-            </div>
-            <div class="mb-3">
-                <label for="mailto">E-mail: </label>
-                <input size="30" type="text" name="mailto" id="mailto">
-            </div>
-            <div class="mb-3">
-                <label for="asunto">Asunto: </label>
-                <select name="asunto">
-                    <option selected>Seleccionar </option>
-                    <option value="1">Consultas </option>
-                    <option value="2">Presupuesto </option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <input type="submit" value="Enviar">
-            </div>
-        </form> -->
                 <div class="col">
                     <div class="p-3 border">
-                        <form class="row g-3">
-                            <div class="col-md-3">
-                                <label for="nombre" class="form-label">Nombre:</label>
-                                <input type="text" class="form-control" id="nombre">
+                        <form action="https://formsubmit.co/lauridangut@gmail.com" method="POST"
+                            class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">*Nombre:</label>
+                                <input type="text" name="nombre" class="form-control" id="nombre" required>
+                                <div class="invalid-feedback">
+                                    Indique su nombre
+                                </div>
                             </div>
-                            <div class="col-md-3">
-                                <label for="apellido" class="form-label">Apellido:</label>
-                                <input type="text" class="form-control" id="apellido">
+                            <div class="col-md-6">
+                                <label for="apellido" class="form-label">*Apellido:</label>
+                                <input type="text" name="apellido" class="form-control" id="apellido" required>
+                                <div class="invalid-feedback">
+                                    Indique su apellido
+                                </div>
                             </div>
                             <div class="col-md-12">
                                 <label for="inputAddress" class="form-label">Dirección:</label>
-                                <input type="text" class="form-control" id="inputAddress"
-                                    placeholder="Islas Malvinas 435">
+                                <input type="text" name="direccion" class="form-control" id="inputAddress">
                             </div>
-                            <div class="col-md-12">
-                                <label for="inputCity" class="form-label">Localidad:</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="Caleufú">
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">*Localidad:</label>
+                                <input type="text" name="localidad" class="form-control" id="inputCity" required>
+                                <div class="invalid-feedback">
+                                    Es necesario indicar una localidad
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <label for="inputState" class="form-label">Provincia:</label>
-                                <input type="text" class="form-control" id="inputState" placeholder="La Pampa">
+                                <input type="text" name="provincia" class="form-control" id="inputState">
                             </div>
-                            <div class="col-md-4">
-                                <label for="inputtel" class="form-label">Teléfono:</label>
-                                <input type="text" class="form-control" id="inputtel">
+                            <div class="col-md-6">
+                                <label for="inputtel" class="form-label">*Teléfono:</label>
+                                <input type="text" name="telefono" class="form-control" id="inputtel" required>
+                                <div class="invalid-feedback">
+                                    Es necesario indicar un teléfono
+                                </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <label for="inputmail" class="form-label">E-mail:</label>
-                                <input type="text" class="form-control" id="inputmail">
+                                <input type="text" name="e-mail" class="form-control" id="inputmail">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputconsulta" class="form-label">*Dejame tu consulta:</label>
+                                <textarea class="form-control" rows="5" id="comentarios" name="comentarios"
+                                    placeholder="*Para solicitud de presupuestos, por favor indicar fecha estimada." required></textarea>
+                                <div class="invalid-feedback">
+                                    Indique la consulta
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <label for="terminos" class="form-check-label">*Acepto ser contactado/a por
+                                        WhatsApp</label>
+                                    <input class="form-check-input" type="checkbox" id="terminos" required>
+                                    <div class="invalid-feedback">
+                                        Es necesario aceptar los términos
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Enviar</button>
                             </div>
                         </form>
                     </div>
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (() => {
+                            'use strict'
+
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            const forms = document.querySelectorAll('.needs-validation')
+
+                            // Loop over them and prevent submission
+                            Array.from(forms).forEach(form => {
+                                form.addEventListener('submit', event => {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault()
+                                        event.stopPropagation()
+                                    }
+
+                                    form.classList.add('was-validated')
+                                }, false)
+                            })
+                        })()
+                    </script>
                 </div>
             </div>
         </div>
@@ -130,9 +155,9 @@
         No me queda claro si esto cuenta como ícono o no. Si es así, listorti
         -->
         <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png"
-                width="4%"></a>
+                width="2%"></a>
         <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png"
-                width="4%"></a>
+                width="2%"></a>
 
         <!-- No entiendo para qué está este Home, queremos que sea un hipervínculo al home? -->
         <div>Home</div>
