@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +13,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"></head>
     
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</head>
+
+>>>>>>> f14290dda4bbc7268dcd65733683ff3a56f3aae2
 <body>
-    <header><!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
+    <header>
+        <!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
         <!-- Agregué la referencia a al home en la imagen, para que se pueda volver apretando el logo. -->
         <a href="index.html">
             <img class="logo" src="imagenes/sinfondo-blanco-01.png" alt="Logo">
@@ -24,7 +37,7 @@
         Estaba como:
         <h1 style="font-size: 3vw">Capturando emociones</h1> 
         No queda bien, pero es digno, lo que tengo es mucho espacio entre el logo y el texto -->
-        <p>Capturando emociones</p> 
+        <p>Capturando emociones</p>
     </header>
     <nav>
         <a class="barra_navegacion" href="enlace_servicios.html">Servicios</a>
@@ -32,26 +45,147 @@
         <a class="barra_navegacion" href="enlace_sobremi.html">Sobre mí</a>
     </nav>
     <section>
+<<<<<<< HEAD
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3244.2359267557554!2d-64.56035448465134!3d-35.59724648021403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95db45d9697abaed%3A0xb55f3174de8b972b!2sIslas%20Malvinas%20435%2C%20L6387AII%20Caleuf%C3%BA%2C%20La%20Pampa!5e0!3m2!1sen!2sar!4v1664900766585!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <br>
 
     </section>
 
+=======
+        <div>
+            <p>¡Contactame!</p>
+        </div>
+    </section>
+    <article class="p-3">
+        <div class="container text-center">
+            <div class="row gx-3">
+                <div class="col">
+                    <div class="p-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25955.192970427142!2d-64.57631431643449!3d-35.593220136075075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95db460d4c8be621%3A0x3d112324c9c49ba5!2sCaleuf%C3%BA%2C%20La%20Pampa!5e0!3m2!1ses-419!2sar!4v1665928267053!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border">
+                        <form action="https://formsubmit.co/lauridangut@gmail.com" method="POST"
+                            class="row g-3 needs-validation" novalidate>
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">*Nombre:</label>
+                                <input type="text" name="nombre" class="form-control" id="nombre" required>
+                                <div class="invalid-feedback">
+                                    Indique su nombre
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="apellido" class="form-label">*Apellido:</label>
+                                <input type="text" name="apellido" class="form-control" id="apellido" required>
+                                <div class="invalid-feedback">
+                                    Indique su apellido
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputAddress" class="form-label">Dirección:</label>
+                                <input type="text" name="direccion" class="form-control" id="inputAddress">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">*Localidad:</label>
+                                <input type="text" name="localidad" class="form-control" id="inputCity" required>
+                                <div class="invalid-feedback">
+                                    Es necesario indicar una localidad
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputState" class="form-label">Provincia:</label>
+                                <input type="text" name="provincia" class="form-control" id="inputState">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputtel" class="form-label">*Teléfono:</label>
+                                <input type="text" name="telefono" class="form-control" id="inputtel" required>
+                                <div class="invalid-feedback">
+                                    Es necesario indicar un teléfono
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputmail" class="form-label">E-mail:</label>
+                                <input type="text" name="e-mail" class="form-control" id="inputmail">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputconsulta" class="form-label">*Dejame tu consulta:</label>
+                                <textarea class="form-control" rows="5" id="comentarios" name="comentarios"
+                                    placeholder="*Para solicitud de presupuestos, por favor indicar fecha estimada." required></textarea>
+                                <div class="invalid-feedback">
+                                    Indique la consulta
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <label for="terminos" class="form-check-label">*Acepto ser contactado/a por
+                                        WhatsApp</label>
+                                    <input class="form-check-input" type="checkbox" id="terminos" required>
+                                    <div class="invalid-feedback">
+                                        Es necesario aceptar los términos
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (() => {
+                            'use strict'
+
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            const forms = document.querySelectorAll('.needs-validation')
+
+                            // Loop over them and prevent submission
+                            Array.from(forms).forEach(form => {
+                                form.addEventListener('submit', event => {
+                                    if (!form.checkValidity()) {
+                                        event.preventDefault()
+                                        event.stopPropagation()
+                                    }
+
+                                    form.classList.add('was-validated')
+                                }, false)
+                            })
+                        })()
+                    </script>
+                </div>
+            </div>
+        </div>
+    </article>
+>>>>>>> f14290dda4bbc7268dcd65733683ff3a56f3aae2
     <footer>
-        <br class="container"><!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
+        <br class="container">
+        <!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
         <!-- Lo de los enlaces fue fácil, ya casi estaba, solo que era al revés el orden. Puse para que se abran en otra página. 
         No me queda claro si esto cuenta como ícono o no. Si es así, listorti
         -->
+<<<<<<< HEAD
         <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png" width="4%"></a>
         <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png" width="4%"></a>
         <a href="https://wa.me/######?text=Hola, quisiera averiguar sobre" target="_blank">
             <img src="imagenes/whatsapp.png" width="4%"></i>
         </a>
         
+=======
+        <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png"
+                width="2%"></a>
+        <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png"
+                width="2%"></a>
+
+>>>>>>> f14290dda4bbc7268dcd65733683ff3a56f3aae2
         <!-- No entiendo para qué está este Home, queremos que sea un hipervínculo al home? -->
         <div>Home</div>
         <div>Aviso Legal y Política de Privacidad</div>
         <div>Todos los derechos reservados</div>
     </footer>
 </body>
+
 </html>
