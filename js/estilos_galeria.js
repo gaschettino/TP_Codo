@@ -86,7 +86,7 @@ fotoQuince.addEventListener('click', function(){
 });
 fotoEmb.addEventListener('click', function(){
     ocultarTodo();
-    mostrarEventos();
+    mostrarEmbarazadas();
 });
 fotoFam.addEventListener('click', function(){
     ocultarTodo();
