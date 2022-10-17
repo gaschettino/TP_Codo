@@ -1,4 +1,3 @@
-/* En algunos lugares como que resetean el default para margen y padding así pueden después trabajar tranquilos */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,14 +11,12 @@ header {
     background-color: #D6BFAB;
     padding: 1% 0;
     align-items: center;
-
     font-family: "Dancing Script", cursive;
     font-weight:bolder;
     font-size: 3vw;
     text-align: center;
 }
 
-/* Esto estaba predefinido, calculo que hay que ponerlo como responsivo también */
 header p {
     display: block;
     margin-block-start: 0em;
@@ -32,7 +29,6 @@ header .logo{
     width:20%;
 }
 
-/* Habría que modificar esto para que sea responsivo */
 section {
     padding: 3% 0;
     font-family: "Dancing Script", cursive;
@@ -40,7 +36,6 @@ section {
     text-align: center;
 }
 
-/* Le cambiaría el tipo de letra y el tamaño, al menos en mi monitor se ve bastante chiquito */
 .features_contenedor {
     background: #ffffff;
     color: #000000;
@@ -51,29 +46,6 @@ section {
     align-content: stretch;
 }
 
-/* Ojo que acá no está responsivo */
-footer {
-    background: #353535;
-    padding: 32px 0;
-    text-align: center;
-    color: #868668;
-    font-size: 12px;
-}
-.container {
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Dicen que no se puede alterar el tamaño de la fuente para h1. 
-No tengo en claro cual es la alternativa. Además de usar p. Tal vez un p class titulo o algo asi?*/
-/* h1 {
-    font-size: 48px;
-    margin: 0 0 16px 0;
-} */
 h2 {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -84,9 +56,6 @@ img {
     max-width: 100%;
     height: auto;
   }
-
-/* Esto es lo que agregué yo para la barra de navegación. Se puede cambiar.
-HAY QUE CAMBIAR EL COLOR*/
   
 nav{
     display:flex;
@@ -111,27 +80,26 @@ nav{
     transition: 0.8s;
 }
 
+footer {
+    background: #353535;
+    padding: 32px 0;
+    text-align: center;
+    color: #868668;
+    font-size: 12px;
+}
+footer .container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* Creo que hay un tema acá con las medidas, porque qué pasa entre 768 y 1024?
-Lo cambio, pero cualquier cosa lo volvemos a poner. 
-@media screen and (max-width: 480px) {
-    body{
-        background-color: #f6d9d3;
-    }
+footer img {
+    width:2%;
 }
-@media screen and (min-width:768px) and (max-width: 1024px){
-    body{
-        background-color: #c0d3d9;}
-}
-@media screen and (min-width: 1200px){
-    body{
-        background-color:#e0e5ea;}
-}
-*/
 
-/* Puse para que la barra de navegación cuando es en menos de 768 se ponga medio en bloque. 
-Quise hacer un menú hamburguesa, pero fracasé rotundamente. Pero es una opción para cuando está chiquito.
-Incluso cuando es muy chiquito lo que podríamos hacer es poner el logo a la izquierda y el menu hamburguesa a la derecha así se ven bien las imágenes y esas cosas. */
 @media screen and (max-width: 480px) {
     body{
         background-color: #f6d9d3;
@@ -145,7 +113,17 @@ Incluso cuando es muy chiquito lo que podríamos hacer es poner el logo a la izq
         text-transform: UPPERCASE;
         transition: 0.8s;
     }
+    header {
+        flex-direction: row;
+        padding-right: 5%
+    }
+    header .logo{
+        display: flex;
+        flex-direction: left;
+        padding-left: 5%;
+    }    
 }
+
 @media screen and (min-width:480px) and (max-width: 768px){
     body{
         background-color: #c0d3d9;
@@ -158,6 +136,14 @@ Incluso cuando es muy chiquito lo que podríamos hacer es poner el logo a la izq
         background:none;
         text-transform: UPPERCASE;
         transition: 0.8s;
+    }
+    header {
+        flex-direction: row;
+        padding-right: 5%
+    }
+    header .logo{
+        display: flex;
+        flex-direction: left;
     }
 }
 @media screen and (min-width:768px) and (max-width: 1024px){

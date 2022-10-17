@@ -7,7 +7,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="css/estilos_galeria.css">
     <link rel="stylesheet" href="css/tp.css">
-    <!-- Cambié el logo en png por .ico -->
     <link rel="icon" href="imagenes/Logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +15,10 @@
     <script src="https://kit.fontawesome.com/2c3657d605.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header><!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
-        <!-- Agregué la referencia a al home en la imagen, para que se pueda volver apretando el logo. -->
+    <header>
         <a href="index.html">
             <img class="logo" src="imagenes/sinfondo-blanco-01.png" alt="Logo">
         </a>
-        <!-- Acá hay un tema con el h1, por lo que dijo no se puede modificar el tamaño, entiendo que esto es para hacerlo responsivo, pero habría que chequearlo. De todas formas, creo que habría que meterlo en css si es que se puede.-> Lo voy a intentar, pero no vi la clase de resposivo todavía
-        Estaba como:
-        <h1 style="font-size: 3vw">Capturando emociones</h1> 
-        No queda bien, pero es digno, lo que tengo es mucho espacio entre el logo y el texto -->
         <p>Capturando emociones</p> 
     </header>
 
@@ -34,11 +28,10 @@
         <a class="barra_navegacion" href="enlace-contacto.html">Contacto</a>
     </nav>
 
-    <!-- podria ser un section -->
     <div class="conteiner-slider" id="conteiner-slider"> 
         <div class="slider" id="slider">
             <div class="slider__section">
-                <p class="titulo">Bebes</p>
+                <p class="titulo">Bebés</p>
                 <a href="#BB">
                     <img src="imagenes/Bebes/5.jpg" alt="Bebes" class="slider__img" id="foto_bebe">
                 </a>
@@ -68,56 +61,32 @@
                 </a>
             </div>
         </div>
-        <!-- Puse el código de caracteres pero podríamos poner íconos. para usarlos... -->
-        <div class="slider__btn slider__btn--right" id="btn--right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn--left">&#60;</div>
+        <div class="slider__btn slider__btn--right" id="btn--right"><i class="fas fa-arrow-right"></i></div>
+        <div class="slider__btn slider__btn--left" id="btn--left"><i class="fas fa-arrow-left"></i></div>
     </div>
 
     <script src="js/estilos_galeria.js"></script>
 
-    <!-- Yo acá pondría una grilla con fotos mini y que de última las abra más grande después, porque sino va a tardar una eternidad en cargar, al pedo. -->
     <br><br>
     <article class="grilla_imagenes">
         <div id="BB">
-            <p> Bebes</p>
+            <p> Bebés</p>
             <div class="contenedor" >
-                <a href="#BB_1">
-                    <img src="imagenes/Bebes/1.jpg" alt="1" class="imagen_grilla">
-                </a>
-                <a href="#BB_2">
-                    <img src="imagenes/Bebes/2.jpg" alt="2" class="imagen_grilla">
-                </a>    
-                <a href="#BB_3">
-                    <img src="imagenes/Bebes/3.jpg" alt="3" class="imagen_grilla">
-                </a>    
-                <a href="#BB_4">
-                    <img src="imagenes/Bebes/4.jpg" alt="4" class="imagen_grilla">
-                </a>    
-                <a href="#BB_5">
-                    <img src="imagenes/Bebes/5.jpg" alt="5" class="imagen_grilla">
-                </a>    
-                <a href="#BB_6">
-                    <img src="imagenes/Bebes/6.jpg" alt="6" class="imagen_grilla">
-                </a>    
-                <a href="#BB_7">
-                    <img src="imagenes/Bebes/7.jpg" alt="7" class="imagen_grilla">
-                </a>    
-                <a href="#BB_8">
-                    <img src="imagenes/Bebes/8.jpg" alt="8" class="imagen_grilla">
-                </a>    
-                <a href="#BB_9">
-                    <img src="imagenes/Bebes/9.jpg" alt="9" class="imagen_grilla">
-                </a>    
-                <a href="#BB_10">
-                    <img src="imagenes/Bebes/10.jpg" alt="10" class="imagen_grilla">
-                </a>    
-                <a href="#BB_11">
-                    <img src="imagenes/Bebes/11.jpg" alt="11" class="imagen_grilla">
-                </a>    
+                <a href="#BB_1"><img src="imagenes/Bebes/Bebes_1.ico" alt="1" class="imagen_grilla"></a>
+                <a href="#BB_2"><img src="imagenes/Bebes/Bebes_2.ico" alt="2" class="imagen_grilla"></a>
+                <a href="#BB_3"><img src="imagenes/Bebes/Bebes_3.ico" alt="3" class="imagen_grilla"></a>
+                <a href="#BB_4"><img src="imagenes/Bebes/Bebes_4.ico" alt="4" class="imagen_grilla"></a>
+                <a href="#BB_5"><img src="imagenes/Bebes/Bebes_5.ico" alt="5" class="imagen_grilla"></a>
+                <a href="#BB_6"><img src="imagenes/Bebes/Bebes_6.ico" alt="6" class="imagen_grilla"></a>
+                <a href="#BB_7"><img src="imagenes/Bebes/Bebes_7.ico" alt="7" class="imagen_grilla"></a>
+                <a href="#BB_8"><img src="imagenes/Bebes/Bebes_8.ico" alt="8" class="imagen_grilla"></a>
+                <a href="#BB_9"><img src="imagenes/Bebes/Bebes_9.ico" alt="9" class="imagen_grilla"></a>
+                <a href="#BB_10"><img src="imagenes/Bebes/Bebes_10.ico" alt="10" class="imagen_grilla"></a>
+                <a href="#BB_11"><img src="imagenes/Bebes/Bebes_11.ico" alt="11" class="imagen_grilla"></a>
             </div>
             <div class="icon_arriba">
                 <a href="#conteiner-slider"  >  
-                    <i class="fa-solid fa-arrow-up" id="icon_arriba"></i>
+                    <i class="fa-sharp fa-solid fa-caret-up"id="icon_arriba"></i>
                 </a>
             </div>
         </div>
@@ -125,52 +94,24 @@
         <div id="Niños">
             <p> Niños</p>
             <div class="contenedor">
-                <a href="#Niños_1">
-                    <img src="imagenes/Niños/1.jpg" alt="1" class="imagen_grilla">
-                </a>
-                <a href="#Niños_2">
-                    <img src="imagenes/Niños/2.jpg" alt="2" class="imagen_grilla">
-                </a>
-                <a href="#Niños_3">
-                    <img src="imagenes/Niños/3.jpg" alt="3" class="imagen_grilla">
-                </a>
-                <a href="#Niños_4">
-                    <img src="imagenes/Niños/4.jpg" alt="4" class="imagen_grilla">
-                </a>
-                <a href="#Niños_5">
-                    <img src="imagenes/Niños/5.jpg" alt="5" class="imagen_grilla">
-                </a>
-                <a href="#Niños_6">
-                    <img src="imagenes/Niños/6.jpg" alt="6" class="imagen_grilla">
-                </a>
-                <a href="#Niños_7">
-                    <img src="imagenes/Niños/7.jpg" alt="7" class="imagen_grilla">
-                </a>
-                <a href="#Niños_8">
-                    <img src="imagenes/Niños/8.jpg" alt="8" class="imagen_grilla">
-                </a>
-                <a href="#Niños_9">
-                    <img src="imagenes/Niños/9.jpg" alt="9" class="imagen_grilla">
-                </a>
-                <a href="#Niños_10">
-                    <img src="imagenes/Niños/10.jpg" alt="10" class="imagen_grilla">
-                </a>
-                <a href="#Niños_11">
-                    <img src="imagenes/Niños/11.jpg" alt="11" class="imagen_grilla">
-                </a>
-                <a href="#Niños_12">
-                    <img src="imagenes/Niños/12.jpg" alt="12" class="imagen_grilla">
-                </a>
-                <a href="#Niños_13">
-                    <img src="imagenes/Niños/13.jpg" alt="13" class="imagen_grilla">
-                </a>
-                <a href="#Niños_14">
-                    <img src="imagenes/Niños/14.jpg" alt="14" class="imagen_grilla">
-                </a>
+                <a href="#Niños_1"><img src="imagenes/Niños/Niños_1.ico" alt="1" class="imagen_grilla"></a>
+                <a href="#Niños_2"><img src="imagenes/Niños/Niños_2.ico" alt="2" class="imagen_grilla"></a>
+                <a href="#Niños_3"><img src="imagenes/Niños/Niños_3.ico" alt="3" class="imagen_grilla"></a>
+                <a href="#Niños_4"><img src="imagenes/Niños/Niños_4.ico" alt="4" class="imagen_grilla"></a>
+                <a href="#Niños_5"><img src="imagenes/Niños/Niños_5.ico" alt="5" class="imagen_grilla"></a>
+                <a href="#Niños_6"><img src="imagenes/Niños/Niños_6.ico" alt="6" class="imagen_grilla"></a>
+                <a href="#Niños_7"><img src="imagenes/Niños/Niños_7.ico" alt="7" class="imagen_grilla"></a>
+                <a href="#Niños_8"><img src="imagenes/Niños/Niños_8.ico" alt="8" class="imagen_grilla"></a>
+                <a href="#Niños_9"><img src="imagenes/Niños/Niños_9.ico" alt="9" class="imagen_grilla"></a>
+                <a href="#Niños_10"><img src="imagenes/Niños/Niños_10.ico" alt="10" class="imagen_grilla"></a>
+                <a href="#Niños_11"><img src="imagenes/Niños/Niños_11.ico" alt="11" class="imagen_grilla"></a>
+                <a href="#Niños_12"><img src="imagenes/Niños/Niños_12.ico" alt="12" class="imagen_grilla"></a>
+                <a href="#Niños_13"><img src="imagenes/Niños/Niños_13.ico" alt="13" class="imagen_grilla"></a>
+                <a href="#Niños_14"><img src="imagenes/Niños/Niños_14.ico" alt="14" class="imagen_grilla"></a>
             </div>
             <div class="icon_arriba">
                 <a href="#conteiner-slider"  >  
-                    <i class="fa-solid fa-arrow-up" id="icon_arriba"></i>
+                    <i class="fa-sharp fa-solid fa-caret-up" id="icon_arriba"></i>
                 </a>
             </div>
         </div>
@@ -178,66 +119,33 @@
         <div id="XVaños">
             <p> 15 años</p>
             <div class="contenedor">
-                <a href="#XVaños_1">
-                    <img src="imagenes/XVaños/1.jpg" alt="1" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_2">
-                    <img src="imagenes/XVaños/2.jpg" alt="2" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_3">
-                    <img src="imagenes/XVaños/3.jpg" alt="3" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_4">
-                    <img src="imagenes/XVaños/4.jpg" alt="4" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_5">
-                    <img src="imagenes/XVaños/5.jpg" alt="5" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_6">
-                    <img src="imagenes/XVaños/6.jpg" alt="6" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_7">
-                    <img src="imagenes/XVaños/7.jpg" alt="7" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_8">
-                    <img src="imagenes/XVaños/8.jpg" alt="8" class="imagen_grilla">
-                </a>
-                <a href="#XVaños_9">
-                    <img src="imagenes/XVaños/9.jpg" alt="9" class="imagen_grilla">
-                </a>
+                <a href="#XVaños_1"><img src="imagenes/XVaños/XVaños_1.ico" alt="1" class="imagen_grilla"></a>
+                <a href="#XVaños_2"><img src="imagenes/XVaños/XVaños_2.ico" alt="2" class="imagen_grilla"></a>
+                <a href="#XVaños_3"><img src="imagenes/XVaños/XVaños_3.ico" alt="3" class="imagen_grilla"></a>
+                <a href="#XVaños_4"><img src="imagenes/XVaños/XVaños_4.ico" alt="4" class="imagen_grilla"></a>
+                <a href="#XVaños_5"><img src="imagenes/XVaños/XVaños_5.ico" alt="5" class="imagen_grilla"></a>
+                <a href="#XVaños_6"><img src="imagenes/XVaños/XVaños_6.ico" alt="6" class="imagen_grilla"></a>
+                <a href="#XVaños_7"><img src="imagenes/XVaños/XVaños_7.ico" alt="7" class="imagen_grilla"></a>
+                <a href="#XVaños_8"><img src="imagenes/XVaños/XVaños_8.ico" alt="8" class="imagen_grilla"></a>
+                <a href="#XVaños_9"><img src="imagenes/XVaños/XVaños_9.ico" alt="9" class="imagen_grilla"></a>
             </div>
             <div class="icon_arriba">
-                <a href="#conteiner-slider"  >  
-                    <i class="fa-solid fa-arrow-up" id="icon_arriba"></i>
-                </a>
+                <a href="#conteiner-slider"><i class="fa-sharp fa-solid fa-caret-up" id="icon_arriba"></i></a>
             </div>
         </div>
 
         <div id="Embarazadas">
             <p>Embarazadas</p>
             <div class="contenedor">
-                <a href="#Embarazadas_1">
-                    <img src="imagenes/Embarazadas/1.jpg" alt="1" class="imagen_grilla">
-                </a>
-                <a href="#Embarazadas_2">
-                    <img src="imagenes/Embarazadas/2.jpg" alt="2" class="imagen_grilla">
-                </a>
-                <a href="#Embarazadas_3">
-                    <img src="imagenes/Embarazadas/3.jpg" alt="3" class="imagen_grilla">
-                </a>
-                <a href="#Embarazadas_4">
-                    <img src="imagenes/Embarazadas/4.jpg" alt="4" class="imagen_grilla">
-                </a>
-                <a href="#Embarazadas_5">
-                    <img src="imagenes/Embarazadas/5.jpg" alt="5" class="imagen_grilla">
-                </a>
-                <a href="#Embarazadas_6">
-                    <img src="imagenes/Embarazadas/6.jpg" alt="6" class="imagen_grilla">
-                </a>
+                <a href="#Embarazadas_1"><img src="imagenes/Embarazadas/Embarazadas_1.ico" alt="1" class="imagen_grilla"></a>
+                <a href="#Embarazadas_2"><img src="imagenes/Embarazadas/Embarazadas_2.ico" alt="2" class="imagen_grilla"></a>
+                <a href="#Embarazadas_3"><img src="imagenes/Embarazadas/Embarazadas_3.ico" alt="3" class="imagen_grilla"></a>
+                <a href="#Embarazadas_4"><img src="imagenes/Embarazadas/Embarazadas_4.ico" alt="4" class="imagen_grilla"></a>
+                <a href="#Embarazadas_5"><img src="imagenes/Embarazadas/Embarazadas_5.ico" alt="5" class="imagen_grilla"></a>
             </div>
             <div class="icon_arriba">
-                <a href="#conteiner-slider"  >  
-                    <i class="fa-solid fa-arrow-up" id="icon_arriba"></i>
+                <a href="#conteiner-slider">  
+                    <i class="fa-sharp fa-solid fa-caret-up" id="icon_arriba"></i>
                 </a>
             </div>
         </div>
@@ -245,13 +153,13 @@
         <div id="Familia">
             <p>Familia</p>
             <div class="contenedor">
-                <a href="#Familia_1"><img src="imagenes/Familia/1.jpg" alt="1" class="imagen_grilla"></a>
-                <a href="#Familia_2"><img src="imagenes/Familia/2.jpg" alt="2" class="imagen_grilla"></a>
-                <a href="#Familia_3"><img src="imagenes/Familia/3.jpg" alt="3" class="imagen_grilla"></a>
+                <a href="#Familia_1"><img src="imagenes/Familia/Familia_1.ico" alt="1" class="imagen_grilla"></a>
+                <a href="#Familia_2"><img src="imagenes/Familia/Familia_2.ico" alt="2" class="imagen_grilla"></a>
+                <a href="#Familia_3"><img src="imagenes/Familia/Familia_3.ico" alt="3" class="imagen_grilla"></a>
             </div>
             <div class="icon_arriba">
                 <a href="#conteiner-slider"  >  
-                    <i class="fa-solid fa-arrow-up"></i>
+                    <i class="fa-sharp fa-solid fa-caret-up"></i>
                 </a>
             </div>
         </div> 
@@ -465,7 +373,7 @@
     </article>
 
     <article class="light-box" id="Embarazadas_1">
-        <a href="#Embarazadas_6" class="next"><i class="fas fa-arrow-left"></i></a>
+        <a href="#Embarazadas_5" class="next"><i class="fas fa-arrow-left"></i></a>
         <img src="imagenes/Embarazadas/1.jpg" alt="1" class="imagen_grilla">
         <a href="#Embarazadas_2" class="next"><i class="fas fa-arrow-right"></i></a>
         <a href="#Embarazadas" class="close">X</a>
@@ -491,12 +399,6 @@
     <article class="light-box" id="Embarazadas_5">
         <a href="#Embarazadas_4" class="next"><i class="fas fa-arrow-left"></i></a>
         <img src="imagenes/Embarazadas/5.jpg" alt="1" class="imagen_grilla">
-        <a href="#Embarazadas_6" class="next"><i class="fas fa-arrow-right"></i></a>
-        <a href="#Embarazadas" class="close">X</a>
-    </article>
-    <article class="light-box" id="Embarazadas_6">
-        <a href="#Embarazadas_5" class="next"><i class="fas fa-arrow-left"></i></a>
-        <img src="imagenes/Embarazadas/6.jpg" alt="1" class="imagen_grilla">
         <a href="#Embarazadas_1" class="next"><i class="fas fa-arrow-right"></i></a>
         <a href="#Embarazadas" class="close">X</a>
     </article>
@@ -520,26 +422,11 @@
         <a href="#Familia" class="close">X</a>
     </article>
 
-
-
-
-
-
-
-
-
-
-
-
     <footer>
-        <br class="container"><!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
-        <!-- Lo de los enlaces fue fácil, ya casi estaba, solo que era al revés el orden. Puse para que se abran en otra página. 
-        No me queda claro si esto cuenta como ícono o no. Si es así, listorti
-        -->
+        <br class="container">
             <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png" width="4%"></a>
             <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png" width="4%"></a>
 
-        <!-- No entiendo para qué está este Home, queremos que sea un hipervínculo al home? -->
         <div>Home</div>
         <div>Aviso Legal y Política de Privacidad</div>
         <div>Todos los derechos reservados</div>

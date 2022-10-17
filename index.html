@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!-- Algunos cambios generales que hice, los voy anotando acá como para que se entienda lo que fui haciendo. Cambié el lenguaje  y lo puse en es. Porque dijo que estaba bueno para las traducciones y no sé que más. Si jode lo devolvemos al en. 
-Cambié las rutas, porque los organicé en carpetas. tipo de css y demás
-Cambié el nombre del archivo html porque para netlify lo levante el html principal debe llamarse index. 
-Para que sean responsivos lo único que hice fue cambiarle el tamaño a valor en % VER CON LAU ESTO. (No vi la clase de responsivo aún, quizás cambie algo, pero podríamos usar eso o vw)-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +7,6 @@ Para que sean responsivos lo único que hice fue cambiarle el tamaño a valor en
     <title>Sonia Heras Fotografía</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="css/tp.css">
-    <!-- Cambié el logo en png por .ico -->
     <link rel="icon" href="imagenes/Logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,41 +15,12 @@ Para que sean responsivos lo único que hice fue cambiarle el tamaño a valor en
     <script src="https://kit.fontawesome.com/2c3657d605.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header><!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
-        <!-- Agregué la referencia a al home en la imagen, para que se pueda volver apretando el logo. -->
+    <header>
         <a href="index.html">
             <img class="logo" src="imagenes/sinfondo-blanco-01.png" alt="Logo">
         </a>
-        <!-- Acá hay un tema con el h1, por lo que dijo no se puede modificar el tamaño, entiendo que esto es para hacerlo responsivo, pero habría que chequearlo. De todas formas, creo que habría que meterlo en css si es que se puede.-> Lo voy a intentar, pero no vi la clase de resposivo todavía
-        Estaba como:
-        <h1 style="font-size: 3vw">Capturando emociones</h1> 
-        No queda bien, pero es digno, lo que tengo es mucho espacio entre el logo y el texto -->
         <p>Capturando emociones</p> 
     </header>
-
-    <!-- Armo otro contenedor, para que se haga para abajo cuando llego a una medida chica.
-    En mi monitor al menos, queda muy chiquito, así que habría que subirle un poco el tamaño -->
-    <!-- <nav class="features_contenedor">
-        <div class="feature">
-            <a href="enlace_servicios.html">Servicios</a>
-        </div>
-
-        <div class="feature">
-            <a href="enlace_galeria.html">Galería</a>
-        </div>
-        
-        <div class="feature">
-            <a href="enlace_sobremi.html">Sobre mí</a>
-        </div>
-
-        <div class="feature">
-            <a href="enlace-contacto.html">Contacto</a>
-        </div>
-    </nav> -->
-    
-    <!-- Esto no salió porque no tengo listas. Ver si lo puedo solucionar:
-    https://www.youtube.com/watch?v=xQstBIPeOdU -->
-    <!-- <i class="fa-light fa-bars"> -->
     <nav>
         <a class="barra_navegacion" href="enlace_servicios.html">Servicios</a>
         <a class="barra_navegacion" href="enlace_galeria.html">Galería</a>
@@ -63,24 +29,14 @@ Para que sean responsivos lo único que hice fue cambiarle el tamaño a valor en
     </nav>
 
     <section>
-        <!-- Acá si usaría un h1, lo dejo para verlo acá. O un p pero un poco    modificado 
-        Cambié el tipo de letra en el css, puse la misma que en el header, pero se puede cambiar. -->
         <p>Bienvenidos</p>
-        <!-- No estoy segura que la imaagen sea responsiva. Solo se mueve xq es más grande que la web, pero el tamaño de la cara de la niñata siempre es igual. Yo creo ue va por el width y height pero ni idea.
-        Le cambié el width a que sea en % y ahora es resposiva. O al menos eso creo
-        -->
         <img src="imagenes/caratula.jpg" alt="Fotografía_bienvenida" width="100%">
     </section>
     
     <footer>
-        <br class="container"><!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
-        <!-- Lo de los enlaces fue fácil, ya casi estaba, solo que era al revés el orden. Puse para que se abran en otra página. 
-        No me queda claro si esto cuenta como ícono o no. Si es así, listorti
-        -->
+        <br class="container">
             <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png" width="4%"></a>
             <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png" width="4%"></a>
-
-        <!-- No entiendo para qué está este Home, queremos que sea un hipervínculo al home? -->
         <div>Home</div>
         <div>Aviso Legal y Política de Privacidad</div>
         <div>Todos los derechos reservados</div>
