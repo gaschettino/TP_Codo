@@ -19,12 +19,21 @@
   text-align: justify;
 }
 
+.titulo_adobe2 {
+  font-family: quasimoda, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #9b837a;
+  text-align: center;
+}
+
 .subtitulo_adobe {
   font-family: omnes-pro, sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #ae5a49;
   text-align: center;
+  font-size: 100%;
 }
 
 .texto_adobe {
@@ -33,14 +42,23 @@
   font-style: normal;
   color: #414042;
   text-align: center;
+  font-size: 45%;
 }
 
 .contenedor_padre {
   display: flex;
+  flex-flow: column nowrap;
   flex-direction: column;
-  justify-content: space-around;
+  align-content: space-around;
 }
 
-.hijos {
-
+/* .hijos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: #414042 solid;
 }
+    .foto {
+      background: #2d4059;
+      flex: 1 1 auto;
+    } */
