@@ -5,10 +5,9 @@
 }
 
 .foto_perfil {
-  max-width: 50%;
-  height: auto;
-  display: flex;
+  max-width: 45%;
   border-radius: 100%;
+  padding-top: 1%;
 }
 
 .titulo_adobe {
@@ -45,13 +44,72 @@
   font-size: 45%;
 }
 
-.contenedor_padre {
+.flex-padre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
+
+.flex-1 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  }
+
+.flex-2 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  }
+
+.flex-3 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  }
+
+.flex-4 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+
+  .flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+ .contenedor_padre {
   display: flex;
   flex-flow: column nowrap;
   flex-direction: column;
   align-content: space-around;
 }
 
+.contenedor_section1 {
+  flex: 2 1 auto;
+}
+
+.contenedor_fotoperfil {
+  flex: 1 1 auto;
+}
 /* .hijos {
   display: flex;
   flex-direction: row;
