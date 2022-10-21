@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .foto_perfil {
@@ -25,6 +25,7 @@
   font-style: normal;
   color: #9b837a;
   text-align: center;
+  font-size: 5vw;
 }
 
 .subtitulo_adobe {
@@ -33,7 +34,7 @@
   font-style: normal;
   color: #ae5a49;
   text-align: center;
-  font-size: 100%;
+  font-size: 5vw;
 }
 
 .texto_adobe {
@@ -42,7 +43,7 @@
   font-style: normal;
   color: #414042;
   text-align: center;
-  font-size: 45%;
+  font-size: 3vw;
 }
 
 .flex-padre {
@@ -72,6 +73,7 @@
   order: 2;
   flex: 0 1 auto;
   align-self: auto;
+  background-color: #ffffff;
 }
 
 .flex-4 {
@@ -90,13 +92,13 @@
 }
 
 
-.flex-item:nth-child(1) {
+.flex-item1 {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
 }
 
-.flex-item:nth-child(2) {
+.flex-item2 {
   order: 1;
   flex: 0 1 auto;
   align-self: auto;
@@ -111,14 +113,84 @@
     align-items: stretch;
 }
 
-.flex-item:nth-child(3) {
+.flex-item3 {
   order: 1;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   align-self: auto;
+  margin: 5vw;
   }
 
-.flex-item:nth-child(4) {
+.flex-item4 {
   order: 0;
   flex: 1 0 auto;
   align-self: stretch;
+  margin: 5vw;
   }
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
+}
+
+.flex-container4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
+}
+
+.flex-item5 {
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+  margin: 5vw;
+  }
+
+.flex-item6 {
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+  margin: 5vw;
+  }
+/* @media screen and (max-width: 480px) {
+  body{
+      background-color: #f6d9d3;
+  }
+  nav{
+      flex-direction: column;
+      align-items: center;
+  }
+  .barra_navegacion:hover{
+      background:none;
+      text-transform: UPPERCASE;
+      transition: 0.8s;
+  }
+}
+@media screen and (min-width:480px) and (max-width: 768px){
+  body{
+      background-color: #c0d3d9;
+  }
+  nav{
+      flex-direction: column;
+      align-items: center;
+  }
+  .barra_navegacion:hover{
+      background:none;
+      text-transform: UPPERCASE;
+      transition: 0.8s;
+  }
+}
+@media screen and (min-width:768px) and (max-width: 1024px){
+  body{
+      background-color: #c0d3d9;}
+}
+@media screen and (min-width: 1024px){
+  body{
+      background-color:#e0e5ea;}
+} */
