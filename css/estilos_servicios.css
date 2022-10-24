@@ -1,4 +1,3 @@
-
 section p {
     text-align:center;
 }
@@ -49,6 +48,6 @@ article {
         height:40vh;
     }
     .tendencies-group2 img {
-    height: 30vh;
+        height: 30vh;
     }
 }
