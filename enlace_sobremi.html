@@ -8,66 +8,45 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="css/tp.css" />
     <link rel="stylesheet" href="css/estilos_sobremi.css" />
-    <link rel="icon" href="imagenes/Logo.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="imagenes/Logo.ico"/>
     <link rel="stylesheet" href="https://use.typekit.net/thf5flb.css" />
   </head>
 
   <body>
     <header>
-      <!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
-      <!-- Agregué la referencia a al home en la imagen, para que se pueda volver apretando el logo. -->
-      <a href="index.html">
-        <img class="logo" src="imagenes/sinfondo-blanco-01.png" alt="Logo" />
+      <a href="index.html" >
+          <img class="logo" src="imagenes/sinfondo-blanco-01.png" alt="Logo">
       </a>
-      <!-- Acá hay un tema con el h1, por lo que dijo no se puede modificar el tamaño, entiendo que esto es para hacerlo responsivo, pero habría que chequearlo. De todas formas, creo que habría que meterlo en css si es que se puede.-> Lo voy a intentar, pero no vi la clase de resposivo todavía
-        Estaba como:
-        <h1 style="font-size: 3vw">Capturando emociones</h1> 
-        No queda bien, pero es digno, lo que tengo es mucho espacio entre el logo y el texto -->
-      <p>Capturando emociones</p>
-      <nav>
-        <a class="barra_navegacion" href="enlace_servicios.html">Servicios</a>
-        <a class="barra_navegacion" href="enlace_galeria.html">Galería</a>
-        <a class="barra_navegacion" href="enlace-contacto.html">Contacto</a>
-      </nav>
-    </header>
+      <p class="titulo_adobe">Capturando emociones</p> 
+  </header>
+  <nav class="texto_adobe22">
+      <a class="barra_navegacion" href="enlace_servicios.html">Servicios</a>
+      <a class="barra_navegacion" href="enlace_galeria.html">Galería</a>
+      <a class="barra_navegacion" href="enlace_sobremi.html">Sobre mí</a>
+      <a class="barra_navegacion" href="enlace-contacto.html">Contacto</a>
+  </nav>
 
     <article>
       <div class="flex-padre">
-        <!-- FLEX-PADRE CONTENEDOR GENERAL DE LAS 4 SECCIONES-->
-
         <div class="flex-1">
-          <!--FLEX-1 CONTENEDOR QUE SE RELACIONA CON EL PADRE DE SOY SONIA Y DE LA FOTO-->
           <div class="flex-container1">
-            <!-- FLEX-CONTAINER CONTENEDOR DE SOY SONIA Y FOTO-->
             <h1 class="flex-item1 titulo_adobe2">
-              <!---FLEX-ITEM CHILD(1) CONTENEDOR DE SOY SONIA-->
               ¡Hola!<br><br>soy Sonia.
             </h1>
             <img
               class="flex-item2 foto_perfil"
               src="imagenes/Familia/DSC_6933.jpg"
-              alt="Fotografa_Sonia"
-            /><!--FLEX-ITEM CHILD(2) CONTENEDOR DE FOTO-->
+              alt="Fotografa_Sonia"/>
           </div>
         </div>
 
         <div class="flex-2">
-          <!-- FLEX-2 CONTENEDOR QUE SE RELACIONA CON EL PADRE DE SOY FOTOGRAFA-->
           <div class="flex-container2">
-            <!--CONTENEDOR DE SOY FOTOGRAFA Y MAPA-->
             <div class="flex-item3">
               <h2 class="subtitulo_adobe">
                 Fotógrafa de niños y familias en Caleufú, La Pampa
               </h2><br>
-              <p class="texto_adobe">
+              <p class="texto_adobe2">
                 La fotografía es para mí el cable a tierra que me conecta con mi
                 alma. En mis fotos intento retener el encanto, la ternura, la
                 calidez y la espontaneidad para transmitir esa añoranza de los
@@ -84,13 +63,10 @@
         </div>
 
         <div class="flex-3">
-          <!-- CONTENEDOR QUE SE RELACIONA CON EL PADRE DE MI HISTORIA -->
           <div class="flex-container3">
-            <!--CONTENEDOR DE ELEMENTOS DE MI HISTORIA-->
             <div class="flex-item5">
-              <!--CONTENEDOR DEL SUBTITULO Y TEXTO DE MI HISTORIA-->
               <h2 class="subtitulo_adobe">Mi historia</h2><br>
-              <p class="texto_adobe">
+              <p class="texto_adobe2">
                 Farmacéutica de profesión, comencé a estudiar fotografía en el
                 año 2008 en la ciudad de Santa Rosa, La Pampa. Fue allí que
                 descubrí mi pasión por las fotos, la cual me llevó a seguir
@@ -109,9 +85,7 @@
         </div>
 
         <div class="flex-4">
-          <!-- CONTENEDOR QUE SE RELACIONA CON EL PADRE DE SEGUIME -->
           <div class="flex-container4">
-            <!--CONTENEDOR DE ELEMENTOS DE SEGUIME-->
             <div class="flex-item6">
               <p class="subtitulo_adobe">¡Seguime en redes y conoce más de mí!</p>
             </div>
@@ -121,23 +95,19 @@
             
     </article>
   
+    
     <footer>
-      <br class="container" />
-      <!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
-      <!-- Lo de los enlaces fue fácil, ya casi estaba, solo que era al revés el orden. Puse para que se abran en otra página. 
-        No me queda claro si esto cuenta como ícono o no. Si es así, listorti
-        -->
-      <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"
-        ><img src="imagenes/instagram.png" width="4%"
-      /></a>
-      <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"
-        ><img src="imagenes/facebook.png" width="4%"
-      /></a>
-
-      <!-- No entiendo para qué está este Home, queremos que sea un hipervínculo al home? -->
-      <div>Home</div>
-      <div>Aviso Legal y Política de Privacidad</div>
-      <div>Todos los derechos reservados</div>
-    </footer>
-  </body>
+      <div class="container">
+          <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png"></a>
+          <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png"></a>
+          <a href="https://api.whatsapp.com/send?phone=5492302536121&text=Hola!%20Me%20interesa%20saber%20sobre%20tus%20servicios%20de%20fotograf%C3%ADa"
+          target="_blank"><img src="imagenes/whatsapp.png"></a>
+      </div>
+      <br>
+      <div class="pie_adobe">
+          <p>Aviso Legal y Política de Privacidad</p>
+          <p>Todos los derechos reservados</p>    
+      </div>
+  </footer>
+</body>
 </html>

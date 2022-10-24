@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonia Heras Fotografía</title>
+    <title>Contacto - Sonia Heras Fotografía</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="css/tp.css">
-    <!-- Cambié el logo en png por .ico -->
     <link rel="icon" href="imagenes/Logo.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/thf5flb.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -23,25 +21,21 @@
 
 <body>
     <header>
-        <!--Hacer que el logo sea responsivo. La imagen no es responsiva porque está seteada la altura y el ancho a pixeles. Todavía no vi esa clase para arreglarlo, pero es por eso.-->
-        <!-- Agregué la referencia a al home en la imagen, para que se pueda volver apretando el logo. -->
-        <a href="index.html">
-            <img src="imagenes/sinfondo-blanco-01.png" alt="Logo" width="30%">
+        <a href="index.html" >
+            <img class="logo" src="imagenes/sinfondo-blanco-01.png" alt="Logo">
         </a>
-        <!-- Acá hay un tema con el h1, por lo que dijo no se puede modificar el tamaño, entiendo que esto es para hacerlo responsivo, pero habría que chequearlo. De todas formas, creo que habría que meterlo en css si es que se puede.-> Lo voy a intentar, pero no vi la clase de resposivo todavía
-        Estaba como:
-        <h1 style="font-size: 3vw">Capturando emociones</h1> 
-        No queda bien, pero es digno, lo que tengo es mucho espacio entre el logo y el texto -->
-        <p>Capturando emociones</p>
+        <p class="titulo_adobe">Capturando emociones</p> 
     </header>
-    <nav>
+    <nav class="texto_adobe2">
         <a class="barra_navegacion" href="enlace_servicios.html">Servicios</a>
         <a class="barra_navegacion" href="enlace_galeria.html">Galería</a>
         <a class="barra_navegacion" href="enlace_sobremi.html">Sobre mí</a>
+        <a class="barra_navegacion" href="enlace-contacto.html">Contacto</a>
     </nav>
+
     <section>
-        <div>
-            <p>¡Contactame!</p>
+        <div class="titulo_adobe2">
+            <p >¡Contactame!</p>
         </div>
     </section>
     <article class="p-3">
@@ -129,47 +123,25 @@
                             </div>
                         </form>
                     </div>
-                    <script>
-                        // Example starter JavaScript for disabling form submissions if there are invalid fields
-                        (() => {
-                            'use strict'
+                    <script src="js/estilo_contacto.js"></script>
 
-                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                            const forms = document.querySelectorAll('.needs-validation')
-
-                            // Loop over them and prevent submission
-                            Array.from(forms).forEach(form => {
-                                form.addEventListener('submit', event => {
-                                    if (!form.checkValidity()) {
-                                        event.preventDefault()
-                                        event.stopPropagation()
-                                    }
-
-                                    form.classList.add('was-validated')
-                                }, false)
-                            })
-                        })()
-                    </script>
                 </div>
             </div>
         </div>
     </article>
+    
     <footer>
-        <br class="container">
-        <!--Hacer que los íconos sean responsivos y enlaces a las respectivas páginas-->
-        <!-- Lo de los enlaces fue fácil, ya casi estaba, solo que era al revés el orden. Puse para que se abran en otra página. 
-        No me queda claro si esto cuenta como ícono o no. Si es así, listorti
-        -->
-        <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png"
-                width="2%"></a>
-        <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png"
-                width="2%"></a>
-
-        <!-- No entiendo para qué está este Home, queremos que sea un hipervínculo al home? -->
-        <div>Home</div>
-        <div>Aviso Legal y Política de Privacidad</div>
-        <div>Todos los derechos reservados</div>
+        <div class="container">
+            <a href="https://www.instagram.com/soniaherasfotografia/" target="_blank"><img src="imagenes/instagram.png"></a>
+            <a href="https://sw-ke.facebook.com/soniaherasfotografia/" target="_blank"><img src="imagenes/facebook.png"></a>
+            <a href="https://api.whatsapp.com/send?phone=5492302536121&text=Hola!%20Me%20interesa%20saber%20sobre%20tus%20servicios%20de%20fotograf%C3%ADa"
+            target="_blank"><img src="imagenes/whatsapp.png"></a>
+        </div>
+        <br>
+        <div class="pie_adobe">
+            <p>Aviso Legal y Política de Privacidad</p>
+            <p>Todos los derechos reservados</p>    
+        </div>
     </footer>
 </body>
-
 </html>

@@ -1,50 +1,15 @@
-.titulo_adobe {
-    font-family: omnes-cyrillic-narrow, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #9b837a;
-    text-align: center;
-    font-size: 6vw;
-}
-  
-.subtitulo_adobe {
-    font-family: omnes-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #ae5a49;
-    text-align: center;
-    font-size: 4vw;
 
-}
-
-.subtitulo_adobe2 {
-    font-family: omnes-pro, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #ae5a49;
-    text-align: center;
-    font-size: 2.5vw;
-}
-
-.texto_adobe {
-    font-family: quasimoda, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    color: #414042;
-    text-align: center;
-}
-
-section hr {
-    border: 0.1vh solid grey;
-    margin-top: 2vh;
-}
 section p {
     text-align:center;
 }
 
+article {
+    margin-top: 5%;
+    margin-bottom:1.5%;
+}
+
 .otras_paginas a {
     text-decoration: none;
-    font-size: 2vw;
 }
 
 .tendencies-group1 {
@@ -68,5 +33,4 @@ section p {
 .tendencies-item {
     width: 100%;
     padding-right: 3%;    
-    font-size: 30%;
 }

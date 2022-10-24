@@ -56,16 +56,6 @@
     right: 0.5em;
 }
 
-.titulo{
-    position:relative;
-    top:80%;
-    color:grey;
-    font-size:8vh;
-    font-family: 'Dancing Script', cursive, bold;
-    text-shadow: -1px 0 white;
-    text-decoration: none;
-}
-
 .contenedor{
     width: 80vw;
     margin: auto;
@@ -143,8 +133,8 @@
 }
 
 .grilla_imagenes p{
-    font-family: 'Dancing Script', cursive, bold;
-    font-size:8vh;
+    /* font-family: 'Dancing Script', cursive, bold;
+    font-size:8vh; */
     margin-top:1em;
     margin-bottom: 0.3em;
     text-align: center;

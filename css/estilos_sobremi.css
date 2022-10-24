@@ -11,41 +11,6 @@
   padding-bottom: 1%;
 }
 
-.titulo_adobe {
-  font-family: omnes-cyrillic-narrow, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #9b837a;
-  text-align: justify;
-}
-
-.titulo_adobe2 {
-  font-family: quasimoda, sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  color: #9b837a;
-  text-align: center;
-  font-size: 5vw;
-}
-
-.subtitulo_adobe {
-  font-family: omnes-pro, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: #ae5a49;
-  text-align: center;
-  font-size: 5vw;
-}
-
-.texto_adobe {
-  font-family: quasimoda, sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  color: #414042;
-  text-align: center;
-  font-size: 3vw;
-}
-
 .flex-padre {
   display: flex;
   flex-direction: column;

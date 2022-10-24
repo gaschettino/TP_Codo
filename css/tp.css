@@ -3,6 +3,78 @@
     margin: 0;
     padding: 0;
 }
+.titulo_adobe {
+    font-family: omnes-cyrillic-narrow, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #9b837a;
+    text-align: justify;
+    font-size: 3vw;
+  }
+  
+  .titulo_adobe2 {
+    font-family: quasimoda, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #9b837a;
+    text-align: center;
+    font-size: 5vw;
+  }
+  
+  .subtitulo_adobe {
+    font-family: omnes-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ae5a49;
+    text-align: center;
+    font-size: 5vw;
+  }
+  
+  .subtitulo_adobe2 {
+    font-family: omnes-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ae5a49;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .texto_adobe {
+    font-family: quasimoda, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #414042;
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .texto_adobe2 {
+    font-family: quasimoda, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #414042;
+    text-align: center;
+    font-size: 2vw;
+    
+  }
+  .texto_adobe3 {
+    font-family: quasimoda, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #414042;
+    text-align: center;
+    font-size: 1.5vw;
+    
+  }
+
+  .pie_adobe {
+    font-family: quasimoda, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1vw;
+  }
 
 header {
     display:flex;
@@ -11,9 +83,6 @@ header {
     background-color: #D6BFAB;
     padding: 1% 0;
     align-items: center;
-    font-family: "Dancing Script", cursive;
-    font-weight:bolder;
-    font-size: 3vw;
     text-align: center;
 }
 
@@ -30,9 +99,6 @@ header .logo{
 }
 
 section {
-    padding: 3% 0;
-    font-family: "Dancing Script", cursive;
-    font-size: 5vw;
     text-align: center;
 }
 
@@ -46,12 +112,6 @@ section {
     align-content: stretch;
 }
 
-h2 {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-a {
-    font-family: 'Source Sans Pro', sans-serif;
-}
 img {
     max-width: 100%;
     height: auto;
@@ -82,15 +142,13 @@ nav{
 
 footer {
     background: #353535;
-    padding: 32px 0;
+    padding: 2% 0;
     text-align: center;
     color: #868668;
-    font-size: 12px;
+    font-size: 1vw;
 }
-footer .container {
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
-    max-width: 900px;
+
+div .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,10 +185,6 @@ footer img {
 @media screen and (min-width:480px) and (max-width: 768px){
     body{
         background-color: #c0d3d9;
-    }
-    nav{
-        flex-direction: column;
-        align-items: center;
     }
     .barra_navegacion:hover{
         background:none;
