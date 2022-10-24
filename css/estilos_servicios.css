@@ -34,3 +34,22 @@ article {
     width: 100%;
     padding-right: 3%;    
 }
+
+@media screen and (max-width: 480px) {
+    .tendencies-group1 img {
+        height: 30vh;
+    }
+    .tendencies-group2 img {
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 768px){
+    .tendencies-group1 img {
+        height:40vh;
+    }
+    .tendencies-group2 img {
+    height: 30vh;
+    }
+}
+}
