@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.foto_perfil {
+  max-width: 45%;
+  border-radius: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.titulo_adobe {
+  font-family: omnes-cyrillic-narrow, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #9b837a;
+  text-align: justify;
+}
+
+.titulo_adobe2 {
+  font-family: quasimoda, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #9b837a;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.subtitulo_adobe {
+  font-family: omnes-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #ae5a49;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.texto_adobe {
+  font-family: quasimoda, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #414042;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.flex-padre {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.flex-1 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  background-color: #ffffff;
+}
+
+.flex-2 {
+  order: 1;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-3 {
+  order: 2;
+  flex: 0 1 auto;
+  align-self: auto;
+  background-color: #ffffff;
+}
+
+.flex-4 {
+  order: 3;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+
+.flex-item1 {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-item2 {
+  order: 1;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: stretch;
+}
+
+.flex-item3 {
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+  margin: 5vw;
+  }
+
+.flex-item4 {
+  order: 0;
+  flex: 1 0 auto;
+  align-self: stretch;
+  margin: 5vw;
+  }
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
+}
+
+.flex-container4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: stretch;
+}
+
+.flex-item5 {
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+  margin: 5vw;
+  }
+
+.flex-item6 {
+  order: 1;
+  flex: 1 1 auto;
+  align-self: auto;
+  margin: 5vw;
+  }
+
+/* Hay algo que falla en la responsividad y no sé qué es   */
+@media screen and (max-width: 480px) {
+  .flex-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  .flex-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  .flex-item3 {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 5vw;
+    }
+  
+  .flex-item4 {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: stretch;
+    margin: 5vw;
+    }
+}
+@media screen and (min-width:480px) and (max-width: 768px){
+  .flex-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  .flex-item3 {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 5vw;
+    }
+  
+  .flex-item4 {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: stretch;
+    margin: 5vw;
+    }
+}
