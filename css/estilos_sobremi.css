@@ -158,7 +158,9 @@
   align-self: auto;
   margin: 5vw;
   }
-/* @media screen and (max-width: 480px) {
+
+/* Hay algo que falla en la responsividad y no sé qué es   */
+@media screen and (max-width: 480px) {
   body{
       background-color: #f6d9d3;
   }
@@ -171,6 +173,33 @@
       text-transform: UPPERCASE;
       transition: 0.8s;
   }
+  .flex-container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  .flex-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  .flex-item3 {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 5vw;
+    }
+  
+  .flex-item4 {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: stretch;
+    margin: 5vw;
+    }
 }
 @media screen and (min-width:480px) and (max-width: 768px){
   body{
@@ -193,4 +222,4 @@
 @media screen and (min-width: 1024px){
   body{
       background-color:#e0e5ea;}
-} */
+}
