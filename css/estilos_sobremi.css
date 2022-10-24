@@ -161,18 +161,6 @@
 
 /* Hay algo que falla en la responsividad y no sé qué es   */
 @media screen and (max-width: 480px) {
-  body{
-      background-color: #f6d9d3;
-  }
-  nav{
-      flex-direction: column;
-      align-items: center;
-  }
-  .barra_navegacion:hover{
-      background:none;
-      text-transform: UPPERCASE;
-      transition: 0.8s;
-  }
   .flex-container1{
     display: flex;
     flex-direction: column;
@@ -202,24 +190,24 @@
     }
 }
 @media screen and (min-width:480px) and (max-width: 768px){
-  body{
-      background-color: #c0d3d9;
+  .flex-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
   }
-  nav{
-      flex-direction: column;
-      align-items: center;
-  }
-  .barra_navegacion:hover{
-      background:none;
-      text-transform: UPPERCASE;
-      transition: 0.8s;
-  }
-}
-@media screen and (min-width:768px) and (max-width: 1024px){
-  body{
-      background-color: #c0d3d9;}
-}
-@media screen and (min-width: 1024px){
-  body{
-      background-color:#e0e5ea;}
+  .flex-item3 {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    margin: 5vw;
+    }
+  
+  .flex-item4 {
+    order: 1;
+    flex: 0 1 auto;
+    align-self: stretch;
+    margin: 5vw;
+    }
 }
